@@ -22,6 +22,6 @@ public class Localidad {
     }
 
     public String toString (){
-        return "hola";
+        return nombre + numeroDeHabitantes;
     }
 }
