@@ -1,11 +1,21 @@
 package dominio;
 
+import java.util.ArrayList;
+
 public class Municipio {
 
-    //Agragación de Localidades
+    //Esta clase muestra un municipio como un conjunto de localidades
     private String nombre = "";
     private int numeroHabitantesMunicipio;
-    private Localidad localidades;
+    private ArrayList<Localidad> localidades = new ArrayList<>();
+
+    public ArrayList<Localidad> getLocalidades() {
+        return localidades;
+    }
+
+    public void setLocalidades(ArrayList<Localidad> localidades) {
+        this.localidades = localidades;
+    }
 
     public String getNombre() {
         return nombre;
@@ -23,18 +33,17 @@ public class Municipio {
         this.numeroHabitantesMunicipio = numeroHabitantesMunicipio;
     }
 
-    public Localidad getLocalidades() {
+    /*public Localidad getLocalidades() {
         return localidades;
     }
-
     public void setLocalidades(Localidad localidades) {
         this.localidades = localidades;
     }
-
-    /*public int calcularNumeroHabitantesMunicipio(){
+    public int calcularNumeroHabitantesMunicipio(){
+        return
     }*/
 
     public String toString(){
-        return localidades + nombre + numeroHabitantesMunicipio;
+        return   "-" + nombre + ": " + numeroHabitantesMunicipio + "\n" + localidades;
     }
 }
