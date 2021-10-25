@@ -1,17 +1,11 @@
 package dominio;
 
+import java.util.ArrayList;
+
 public class Localidad {
 
-    private String nombre = "";
-    private int numeroDeHabitantes;
-
-    public int getNumeroDeHabitantes() {
-        return numeroDeHabitantes;
-    }
-
-    public void setNumeroDeHabitantes(int numeroDeHabitantes) {
-        this.numeroDeHabitantes = numeroDeHabitantes;
-    }
+    private String nombre;
+    private int numeroHabitantes;
 
     public String getNombre() {
         return nombre;
@@ -21,7 +15,15 @@ public class Localidad {
         this.nombre = nombre;
     }
 
-    /*public String toString (){
-        return nombre + " " + numeroDeHabitantes;
-    }*/
+    public int getNumeroHabitantes() {
+        return numeroHabitantes;
+    }
+
+    public void setNumeroHabitantes(int numeroHabitantes) {
+        this.numeroHabitantes = numeroHabitantes;
+    }
+
+    public String toString (){
+        return nombre + numeroHabitantes;
+    }
 }
