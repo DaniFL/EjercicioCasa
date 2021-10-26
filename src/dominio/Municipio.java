@@ -9,6 +9,9 @@ import java.util.ArrayList;
 public class Municipio {
 
     private String nombre;
+    /**
+     * Método ArrayList de localidades.
+     */
     private ArrayList<Localidad> localidades = new ArrayList<>();
 
     /**

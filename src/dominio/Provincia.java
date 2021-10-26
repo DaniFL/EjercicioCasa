@@ -9,6 +9,9 @@ import java.util.ArrayList;
 public class Provincia {
 
     private String nombre;
+    /**
+     * Método ArrayList de municipios
+     */
     private ArrayList<Municipio> municipios = new ArrayList<>();
 
     /**
