@@ -3,14 +3,16 @@ package aplicacion;
 import dominio.Localidad;
 import dominio.Municipio;
 import dominio.Provincia;
-import java.util.ArrayList;
-import java.util.stream.IntStream;
 
 public class Principal {
 
+    /**
+     * Método main a partir del que se llevará a cabo la ejecución del programa.
+     * @param args
+     */
     public static void main(String[] args){
 
-
+        //Creación y relación entre los Objetos de las clases Provincia, Municipio y Localidad
         Provincia provincia1 = new Provincia();
         provincia1.setNombre("Madrid");
 
@@ -55,7 +57,7 @@ public class Principal {
         localidad6.setNumeroHabitantes(4900);
         municipio2.addLocalidad(localidad6);
         //System.out.println(municipio2);
-        System.out.println(provincia1);
 
+        System.out.println(provincia1);
     }
 }
