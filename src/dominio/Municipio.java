@@ -1,26 +1,44 @@
 package dominio;
+
 import java.util.ArrayList;
 
+/**
+ * La clase Municipio se escribe como una agregación de localidades.
+ * @author Daniel Fernández López
+ */
 public class Municipio {
 
-    //Atributos
     private String nombre;
-    //Creamos la clase Municipio como una agregación de localidades, gracias a un ArrayList que almacenará dichos elementos.
     private ArrayList<Localidad> localidades = new ArrayList<>();
 
-    //Getters & Setters de los atributos privados de la clase:
+    /**
+     * El método get devuelve el valor del ArrayList de localidades.
+     * @return
+     */
     public ArrayList<Localidad> getLocalidades() {
         return localidades;
     }
 
+    /**
+     * El método set toma un parámetro y lo asigna al ArrayList
+     * @param localidades
+     */
     public void setLocalidades(ArrayList<Localidad> localidades) {
         this.localidades = localidades;
     }
 
+    /**
+     * El método get devuelve el valor del atributo nombre.
+     * @return
+     */
     public String getNombre() {
         return nombre;
     }
 
+    /**
+     * El método set toma un parámetro y lo asigna al atributo nombre.
+     * @param nombre
+     */
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }

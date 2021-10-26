@@ -2,26 +2,43 @@ package dominio;
 
 import java.util.ArrayList;
 
+/**
+ * La clase Provincia se escribe como una agregación de municipios.
+ * @author Daniel Fernández López
+ */
 public class Provincia {
 
-    //Atributos
     private String nombre;
-    //Escribimos la clase Provincia como una agregación de municipios, gracias a un ArrayList que almacenará dichos elementos.
     private ArrayList<Municipio> municipios = new ArrayList<>();
 
-    ////Getters & Setters de los atributos privados de la clase:
+    /**
+     * El método get devuelve el valor del atributo nombre
+     * @return
+     */
     public String getNombre() {
         return nombre;
     }
 
+    /**
+     * El método set toma un parámetro y lo asigna al atributo nombre.
+     * @param nombre
+     */
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
+    /**
+     * El método get devuelve el valor del ArrayList de municipios
+     * @return
+     */
     public ArrayList<Municipio> getMunicipios() {
         return municipios;
     }
 
+    /**
+     * El método set toma un parámetro y lo asigna al ArrayList de municipios.
+     * @param municipios
+     */
     public void setMunicipios(ArrayList<Municipio> municipios) {
         this.municipios = municipios;
     }

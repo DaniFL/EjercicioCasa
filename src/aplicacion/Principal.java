@@ -4,6 +4,10 @@ import dominio.Localidad;
 import dominio.Municipio;
 import dominio.Provincia;
 
+/**
+ * La clase Principal inicializa el programa.
+ * @author Daniel Fernández lópez
+ */
 public class Principal {
 
     /**
