@@ -6,15 +6,15 @@ Copyright [2021] (Daniel Fernández López copyright) Licensed under the Apache 
 
 * El propósito de este ejercicio es introducir el tratamiento de colecciones de objetos.
 
-##Instrucciones: 
+## Instrucciones: 
 
-###Compilar: 
+### Compilar: 
 - make compilar
-###Ejecutar: 
+### Ejecutar: 
 - make ejectar
-###Crear Jar: 
+### Crear Jar: 
 - make jar
-###Ver Jar: 
+### Ver Jar: 
 - make ver
-###Crear Javadoc: 
+### Crear Javadoc: 
 - make javadoc
