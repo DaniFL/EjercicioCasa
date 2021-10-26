@@ -35,6 +35,6 @@ public class Provincia {
     }
 
     public String toString(){
-        return nombre + municipios + calcularPoblacionTotal();
+        return "La provincia " + nombre + " está formada por los siguientes municipios: " + municipios + " \nPoblación Provincia: " + calcularPoblacionTotal() + " habitantes";
     }
 }

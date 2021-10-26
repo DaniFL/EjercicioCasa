@@ -24,6 +24,6 @@ public class Localidad {
     }
 
     public String toString (){
-        return nombre + numeroHabitantes;
+        return "\n" + "- " + nombre +  " (" + numeroHabitantes + " habitantes)";
     }
 }

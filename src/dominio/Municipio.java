@@ -35,6 +35,6 @@ public class Municipio {
     }
 
     public String toString(){
-        return   "- El municipio " + nombre + " está formado por estas localidades: " + localidades + calcularPoblacion();
+        return   "\nEl municipio " + nombre + " que está compuesto por estas localidades: " + localidades + " \nPoblación Municipio: " + calcularPoblacion() + " habitantes";
     }
 }

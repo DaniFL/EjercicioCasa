@@ -22,7 +22,6 @@ public class Principal {
         localidad1.setNombre("Montepríncipe");
         localidad1.setNumeroHabitantes(1500);
         municipio1.addLocalidad(localidad1);
-
         //System.out.println(municipio1);
 
         Localidad localidad2 = new Localidad();
@@ -58,16 +57,5 @@ public class Principal {
         //System.out.println(municipio2);
         System.out.println(provincia1);
 
-
-        /*System.out.println(municipios);
-        System.out.println(localidades);
-        int sum = 0;
-        int size = 6;
-        for(int i=0; i<size; i++){
-            numeroHabitantesLocalidad.get(i);
-            sum = sum + numeroHabitantesLocalidad.get(i);
-        }
-        System.out.println(numeroHabitantesLocalidad);
-        System.out.println(sum);*/
     }
 }
