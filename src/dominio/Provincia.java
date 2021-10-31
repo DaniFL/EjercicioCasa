@@ -72,7 +72,15 @@ public class Provincia {
      * En este caso el nombre, los municipios y el número de habitantes de la provincia.
      * @return
      */
-    public String toString(){
+    /*public String toString(){
         return "La provincia " + nombre + " está formada por los siguientes municipios: " + municipios + " \nPoblación Provincia: " + calcularPoblacionTotal() + " habitantes";
+    }*/
+
+    public String toString(){
+        String mensaje2 = "La provincia " + nombre + " tiene " + calcularPoblacionTotal() + " habitantes, y está formada por los siguintes municipios: \n";
+        for (int i = 0; i < municipios.size(); i++){
+            mensaje2 += municipios.get(i) + "\n";
+        }
+        return mensaje2;
     }
 }

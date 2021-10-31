@@ -72,7 +72,17 @@ public class Municipio {
      * En este caso el nombre, las localidades y el número de habitantes del municipio.
      * @return
      */
-    public String toString(){
+
+    /*public String toString(){
         return   "\nEl municipio " + nombre + " que está compuesto por estas localidades: " + localidades + " \nPoblación Municipio: " + calcularPoblacion() + " habitantes";
+    }*/
+    public String toString(){
+        String mensaje = "El municipio " + nombre + " tiene " + calcularPoblacion() + " habitantes y está formado por las siguientes localidades: \n";
+        for (int i = 0; i < localidades.size(); i++){
+        mensaje += localidades.get(i) + "\n";
+
+        }
+
+        return mensaje;
     }
 }
